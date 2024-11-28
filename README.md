@@ -108,6 +108,9 @@ sudo systemctl enable flask_app
 ```bash
 sudo systemctl status flask_app
 ```
+```bash
+Nå funker flask-gunicorn backenden, resten er ikke nødvendig
+```
 ## 6.  Sett opp NGINX som en omvendt proxy (valgfritt + jeg fikk det ikke helt til å funke)
 ### 1.	Installer NGINX:
 ```bash
