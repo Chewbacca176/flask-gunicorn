@@ -1,5 +1,5 @@
 # flask-gunicorn
-'''bash
+```bash
 from flask import Flask
 
 app = Flask(__name__)
@@ -10,9 +10,9 @@ def home():
 
 if __name__ == "__main__":
     app.run()
-'''
+```
 
-'''bash
+```bash
 [Unit]
 Description=Gunicorn instance to serve Flask application
 After=network.target
@@ -26,10 +26,10 @@ ExecStart=/path/to/flask_app/venv/bin/gunicorn -w 3 -b 0.0.0.0:8000 app:app
 
 [Install]
 WantedBy=multi-user.target
-'''
+```
 
 
-'''bash
+```bash
 server {
     listen 80;
     server_name your_domain_or_ip;
@@ -42,4 +42,4 @@ server {
         proxy_set_header X-Forwarded-Proto $scheme;
     }
 }
-'''
+``` 
